@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	font-weight: normal;
+}
+.background{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow-y: auto;
+}
+
+.nav{
+	width: 350px;
+	height: auto;
+	/*background-color: gray;
+	*/
+	position: absolute;
+	top: 20%;
+	left: 0;
+}
+
+.nav a{
+	text-decoration: none;
+	font-size: 28px;
+	font-family: Verdana;
+	font-weight: bold;
+	height: 90px;
+	margin: 5px 0;
+	float: left;
+	display: inline-block;
+	background-color: #181818; /*makes the tab background same as background image(or say transparent)*/
+	color: White;
+	line-height: 90px;
+	text-align: center;
+	transition: 300ms;
+}
+/*{
+	background-color: white;
+	color: black;
+}*/
+a.active, .nav a:hover{
+	background-color: white;
+	color: black;
+	width: 100%;
+}
+.a{
+	width: 95%;
+}
+.b{
+	width: 85%;
+}
+.c{
+	width: 80%;
+}
+.d{
+	width: 83%;
+}
+
+
+
+
+
+
+
+
+
+

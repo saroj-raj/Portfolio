@@ -65,7 +65,23 @@ a.active, .nav a:hover{
 	width: 83%;
 }
 
+.content{
+	position: absolute;
+	 width: 900px;
+	 min-height: 500px;
+	 height: auto;
+	 background-color: constant;/*red*/
+	 right: 0;
+	 top: 12%;
+}
 
+.home{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: white;
+	font-family: verdana;
+}
 
 
 

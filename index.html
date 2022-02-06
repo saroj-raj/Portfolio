@@ -14,8 +14,28 @@
 	<a class="d" href="#">CONTACT</a>
 
 </div>
+
+<div class="content">
+	<div class="home">
+		<h1>I'm a Saroj Raj</h1>
+		<h3>Full-Stack Developer</h3>
+	</div>
+	
 </div>
+
+</div>
+
+<script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('a').click(function(){
+			//alert("i am a click");
+			var selected = $(this);
+			$('a').removeClass('active');
+			$(selected).addClass('active');
+		});
+	});
+</script>
+
 </body>
 </html>
-<!-- 
-git sync test -->

@@ -94,7 +94,21 @@ a.active, .nav a:hover{
 	opacity: 0.6;
 }
 
-
+.aboutme{
+	position: absolute;
+	right: -34px;
+	top: 160px;
+	color: white;
+	font-family: century gothic;
+	padding: 0 60px;
+}
+.aboutme p{
+	font-size: 17px;
+}
+/*.list{
+	right: -36px;
+}
+*/
 
 
 

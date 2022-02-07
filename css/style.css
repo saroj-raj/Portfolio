@@ -70,7 +70,7 @@ a.active, .nav a:hover{
 	 width: 900px;
 	 min-height: 500px;
 	 height: auto;
-	 background-color: constant;/*red*/
+	 /*background-color: constant;/*red*/
 	 right: 0;
 	 top: 12%;
 }
@@ -78,11 +78,21 @@ a.active, .nav a:hover{
 .home{
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	top: 15px;
 	color: white;
 	font-family: verdana;
+	/*text-transform: uppercase;*/
 }
-
+.home h1{
+	font-size: 85px;
+	padding-right: 50px;
+	border-bottom: 1px solid #181818;
+}
+.home h3{
+	font-size: 28px;
+	padding: 5px 0;
+	opacity: 0.6;
+}
 
 
 

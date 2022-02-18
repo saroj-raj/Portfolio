@@ -96,11 +96,12 @@ a.active, .nav a:hover{
 
 .aboutme{
 	position: absolute;
-	right: -34px;
+	right: -60px;
 	top: 160px;
 	color: white;
 	font-family: century gothic;
 	padding: 0 60px;
+	display: none;
 }
 .aboutme p{
 	font-size: 17px;

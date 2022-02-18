@@ -22,7 +22,7 @@
 	</div>
 
 	<div class="aboutme">
-		<p>Hi, I'm a <b>Full-Stack Developer</b>, Undergrad from IIT Bombay in Computer Science Engineering.<br>
+		<p>Hi, I'm a <i><b>Full-Stack Developer</b></i>, Undergrad from IIT Bombay in Computer Science Engineering.<br>
 		Work Experience: 
 		<!-- <div class="list">	 -->
 			<ul>
@@ -31,6 +31,11 @@
 			</ul>
 		<!-- </div>	 -->
 		</p>
+	</div>
+
+	<div class="projects">
+		<div class="image">
+			<img src="">
 	</div>
 	
 </div>
@@ -46,6 +51,25 @@
 			$('a').removeClass('active');
 			$(selected).addClass('active');
 		});
+
+		var $a = $('.a'),
+		$b = $('.b'),
+		$c = $('.c'),
+		$d = $('.d'),
+		$home = $('.home'),
+		$aboutme = $('.aboutme');
+
+		$a.click(function(){
+			$home.fadeIn();
+			$aboutme.fadeOut();
+		});
+		$b.click(function(){
+			$home.fadeOut();
+			$aboutme.fadeIn();
+		});
+
+
+
 	});
 </script>
 

@@ -35,7 +35,14 @@
 
 	<div class="projects">
 		<div class="image">
-			<img src="">
+			<img src="images/projects/chess.jpg"/>
+		</div>
+		<div class="image">
+			<img src="images/projects/android.png"/>
+		</div>
+		<div class="image">
+			<img src="images/projects/python.png"/>
+		</div>
 	</div>
 	
 </div>
@@ -57,15 +64,33 @@
 		$c = $('.c'),
 		$d = $('.d'),
 		$home = $('.home'),
-		$aboutme = $('.aboutme');
+		$aboutme = $('.aboutme'),
+		$projects = $('.projects'),
+		$contact = $('.contact');
 
 		$a.click(function(){
 			$home.fadeIn();
 			$aboutme.fadeOut();
+			$projects.fadeOut();
+			$contact.fadeOut();
 		});
 		$b.click(function(){
-			$home.fadeOut();
 			$aboutme.fadeIn();
+			$home.fadeOut();
+			$projects.fadeOut();
+			$contact.fadeOut();
+		});
+		$c.click(function(){
+			$projects.fadeIn();
+			$home.fadeOut();
+			$aboutme.fadeOut();
+			$contact.fadeOut();
+		});
+		$d.click(function(){
+			$contact.fadeIn();
+			$home.fadeOut();
+			$projects.fadeOut();
+			$aboutme.fadeOut();
 		});
 
 

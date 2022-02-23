@@ -150,149 +150,93 @@ a.active, .nav a:hover{
 }
 /*Social media links*/
 
-
-
-
-* {
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-
-body {
-  background: #0A122A;
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
-
-/* Let's style the wrapper in such away that, 
-it should always be at the center of the browser */
-.wrapper {
-  position: absolute;
-  bottom: -14%;
-  left: 50%;
+.wrapper{
+	position: absolute;
+	right: 250px;
+	bottom: -5%;
+}
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
   float: left;
-  transform: translate(-50%, -50%);
-  width: 550px;
-}
-
-/* Style the Un-order list by setting its list-style to none */
-.wrapper ul {
-  list-style: none;
-}
-
-/* Style the list items inside the UL list, by setting its width, height and line-height 
-  and float them to left and set its border and border-radius.
- */
-.wrapper ul li {
-  width: 75px;
-  height: 75px;
-  line-height: 75px;
-  margin: 0 10px;
-  text-align: center;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
   cursor: pointer;
-  border-radius: 50%;
-  border: 5px solid #D8E2DC;
-  float: left;
-  transition: all 0.5s ease;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
 }
-
-/* Style the icons by setting its color and margin-top value to 20px 
-to align it properly */
-.wrapper ul li .fa {
-  color: #D8E2DC;
-  margin-top: 20px;
-  transition: all 0.5s ease;
+.wrapper .button:hover{
+  width: 200px;
 }
-
-/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
-  to icons for glowing effect and use transition property for smooth transition effect. */
-/*facebook*/
-.wrapper ul li:hover.facebook {
-  border: 5px solid #3b5998;
-  box-shadow: 0 0 15px #3b5998;
-  transition: all 0.5s ease;
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.5s ease-out;
 }
-
-.wrapper ul li:hover .fa-facebook {
-  color: #3b5998;
-  text-shadow: 0 0 15px #3b5998;
-  transition: all 0.5s ease;
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
 }
-
-/*twitter*/
-.wrapper ul li:hover.twitter {
-  border: 5px solid #00aced;
-  box-shadow: 0 0 15px #00aced;
-  transition: all 0.5s ease;
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
 }
-
-.wrapper ul li:hover .fa-twitter {
-  color: #00aced;
-  text-shadow: 0 0 15px #00aced;
-  transition: all 0.5s ease;
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
 }
-
-/* instagram */
-.wrapper ul li:hover.instagram {
-  border: 5px solid #bc2a8d;
-  box-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
 }
-
-.wrapper ul li:hover .fa-instagram {
-  color: #bc2a8d;
-  text-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
 }
-
-/* google */
-.wrapper ul li:hover.google {
-  border: 5px solid #dd4b39;
-  box-shadow: 0 0 15px #dd4b39;
-  transition: all 0.5s ease;
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
 }
-
-.wrapper ul li:hover .fa-google {
-  color: #dd4b39;
-  text-shadow: 0 0 15px #dd4b39;
-  transition: all 0.5s ease;
+.wrapper .button:hover .icon i{
+  color: #fff;
 }
-
-/* whatsapp */
-.wrapper ul li:hover.whatsapp {
-  border: 5px solid #4dc247;
-  box-shadow: 0 0 15px #4dc247;
-  transition: all 0.5s ease;
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
 }
-
-.wrapper ul li:hover .fa-whatsapp {
-  color: #4dc247;
-  text-shadow: 0 0 15px #4dc247;
-  transition: all 0.5s ease;
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
 }
-
-
-/* media queries */
-
-@media screen and (max-width: 640px){
-  .wrapper {
-      width: 350px;
-  }
-  .wrapper ul li{
-      margin-top: 10px;
-  }
-  .wrapper ul li.google{
-      margin-left: 60px;
-  }
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
 }
-
-
-@media screen and (max-width: 340px){
-  .wrapper {
-      width: 150px;
-  }
-  .wrapper ul li{
-      margin:15px;
-  }
-  .wrapper ul li.google{
-      margin-left: 15px;
-  }
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
 }
